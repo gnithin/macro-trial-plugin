@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
+
+import importFlavored from './importFlavored.macro'
+importFlavored(Hello, "./hello")
 // import Hello from './hello.green'
-// import Hello from './hello.white'
-import Hello from './hello'
-import gemmafy from './gemmafy.macro'
 
 class App extends Component {
     render() {
-        console.log(gemmafy("this is a pup load of mistakes"))
+        console.log("HEL - ", Hello)
         return (
             <div className="App">
-                {
-                    gemmafy("this is a pup load of mistakes")
-                }
                 <Hello />
             </div>
         );
