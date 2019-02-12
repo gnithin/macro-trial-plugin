@@ -9,6 +9,9 @@ class App extends Component {
         console.log(gemmafy("this is a pup load of mistakes"))
         return (
             <div className="App">
+                {
+                    gemmafy("this is a pup load of mistakes")
+                }
                 <Hello />
             </div>
         );
